@@ -9,13 +9,12 @@ name.dob = '11/03/1999';
 console.log(name)
 */
 
-/*  Type error  example
-const age =  {age1:23 } 
+
+const age = 21 
 age = 22 
 console.log(age)
-age.age1 = 22
 console.log(age)
-*/
+
 
 /*    Arrray
 const mat = [22,23,24,25]
