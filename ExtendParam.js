@@ -13,12 +13,12 @@ f(1) == 50
 // to accept an indefinite number of arguments as an array,
 
 function sum(a1,a2,...a){
-    return (a1+a2) * a
+    return (a1,a2) * a
 }
-sum(2,3,9,4)  
+sum(2,3,4)  
 
 
-// Extended Parameter Handling  
+// Spread operator 
 
 var x = [1,"Welcome",2022]
 var y = [2,"December",...x] 
