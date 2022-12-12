@@ -123,3 +123,7 @@ class Rectangle extends Shape {
 
 const x = new Rectangle()
 console.log(x)
+
+
+// Symbol Type   
+
