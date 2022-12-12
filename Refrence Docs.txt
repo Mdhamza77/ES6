@@ -1,0 +1,80 @@
+let { firstName, lastName } = person;
+
+console.log(firstName); // 'John'    // Refrence the properties to access tyhe variable from objects properties
+console.log(lastName); // 'Doe'  
+
+
+// intuitive and flexible destructuring of Arrays into individual variables during assignment.
+
+var list = [ 1, 2, 3 ]
+var [ a, , b ] = list
+console.log([a, ,b], list) 
+let z = [a,b] =[b,a]   // Reversing an array and assinging in a variable
+console.log(z)
+
+ //  Destructing Assignments
+
+ let q, p, rest;
+[q, p] = [10, 20];
+
+console.log(q);
+// expected output: 10
+
+console.log(p);
+// expected output: 20
+// makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+
+console.log([...rest])   
+
+//   Destructing Assignments  
+
+const i = [1,2,3,4]
+const [j,k] = i 
+console.log(i,j,k) 
+
+//  object Destructors  
+
+const obj = {t : "123" , v : "456"}
+
+const {t1,v1}  = obj 
+console.log(obj.v1)
+console.log(obj)
+
+//  Reference destructor
+
+ const props =  { name : "Muhammed" , prefix : "Mr" } ;  let {name,prefix} = props ; 
+ console.log(prefix + " "+ name)
+
+// 
+
+function f ([ name, val ]) {
+    console.log(name, val)
+}
+function g ({ name: n, val: v }) {
+    console.log(n, v)
+}
+function h ({ name, val }) {
+    console.log(name, val)
+}
+f([ "bar", 42 ])
+g({ name: "foo", val:  7 })
+h({ name: "bar", val: 42 })
+
+// Array and Object Matching Defaults 
+
+var ob = { a: 1 }
+var list = [ 1 ]
+var { a, b = 2 } = ob
+var [ x, y = 2 ] = list
+console.log({a,b}, ob)
+console.log([x,y],list)
+
+// 
+var x = [10,20] 
+var [ f=1, g=2,t=4,o] = x 
+console.log(f === 1)
+console.log(x,f)
+console.log(t)
+
+//

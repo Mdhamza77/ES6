@@ -36,3 +36,6 @@ obj2 = {
 console.log(obj2.fo(11,22))
 console.log(obj2.br(11,11))
 console.log(obj2.x(3,3))
+
+
+
