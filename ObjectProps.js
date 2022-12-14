@@ -1,5 +1,5 @@
 var x = 99 
-var y = "Names of God"
+var y = "Names"
 obj = {x,y}
 console.log(typeof y)
 console.log(typeof x)

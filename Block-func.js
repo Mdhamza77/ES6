@@ -7,7 +7,7 @@
             return n + ' This is Numbers type' 
     }
     block(6)
-}
+  }
  
 //  Because the function assigned to Variable x is out of block 
 

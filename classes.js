@@ -13,7 +13,6 @@ const ad = new math(1,2,4)
 console.log(ad)
 
 //
-
 class person {
     name ;
     constructor(name){

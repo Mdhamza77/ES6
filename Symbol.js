@@ -44,3 +44,4 @@ function Itr(values) {
 
 const result = Itr(Myarr) 
 console.log(result.next())
+

@@ -18,14 +18,12 @@ function my(Strings,personEx,ageEx){
 
      const arg = ageEx > 66 ? "Older Age" : "Younger"
 
-     return `${st} ${personEx} ${str} ${ageEx}${strr}`
+     return `${st} ${personEx} ${str} ${ageEx}${strr} ${arg}`
      
 }
 console.log(my(Strings,"Jamal",77))
 
-// Raw Method's 
-const str = String.raw`Hi\n${2 + 3}!`;
-Array.from(str).join(",");
+
 
 // Raw String Access  
 const filePath = String.raw`C:\Development\profil\about.html`;

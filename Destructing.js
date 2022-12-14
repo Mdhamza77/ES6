@@ -46,3 +46,13 @@ var [w,y,z] = x
 console.log(x)
 console.log(w === x[0])
 console.log(z === undefined)
+
+// Short Hand Destructing  
+
+const u = "Welcome"
+const l = "to"
+const b =  "Short hand object destructing"
+
+const dest = {u,l,b}
+console.log(dest)
+

@@ -37,8 +37,8 @@ console.log(i,j,k)
 
 const obj = {t : "123" , v : "456"}
 
-const {t1,v1}  = obj 
-console.log(obj.v1)
+const {t,v}  = obj 
+console.log(t,v)
 console.log(obj)
 
 //  Reference destructor
@@ -64,10 +64,11 @@ h({ name: "bar", val: 42 })
 // Array and Object Matching Defaults 
 
 var ob = { a: 1 }
-var list = [ 1 ]
 var { a, b = 2 } = ob
-var [ x, y = 2 ] = list
 console.log({a,b}, ob)
+
+var list = [ 1 ]
+var [ x, y = 2 ] = list
 console.log([x,y],list)
 
 // 
@@ -125,5 +126,14 @@ const x = new Rectangle()
 console.log(x)
 
 
-// Symbol Type   
+//Promise Types  
 
+function msgAfterTimeout (msg, who, timeout) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve(`${msg} Hello ${who}!`), timeout)
+    })
+}
+msgAfterTimeout("", "Foo", 100).then((msg) =>
+     {
+    console.log(`done after 300ms:${msg}`)
+})
